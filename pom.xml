@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>com.czl.supermarket</groupId>
+    <artifactId>supermarket</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+    <name>supermarket</name>
+    <description>父工程</description>
+    <packaging>pom</packaging>
+
+    <modules>
+        <module>supermarket-coupon</module>
+        <module>supermarket-member</module>
+        <module>supermarket-order</module>
+        <module>supermarket-product</module>
+        <module>supermarket-ware</module>
+    </modules>
+
+
+
+    <properties>
+        <java.version>1.8</java.version>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+        <spring-boot.version>2.3.0.RELEASE</spring-boot.version>
+        <spring-cloud.version>Hoxton.SR4</spring-cloud.version>
+    </properties>
+
+
+
+</project>
