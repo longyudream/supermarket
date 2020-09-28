@@ -4,13 +4,19 @@ server:
 
 ## 配置数据源
 spring:
+  application:
+    name: member
   datasource:
     username: root
     password: root
-    url: jdbc:log4jdbc:mysql://120.79.166.45:3306/supermarket_ums
+    url: jdbc:log4jdbc:mysql://localhost:5820/supermarket_ums
     ## 可以打印详细sql的驱动
     driver-class-name: net.sf.log4jdbc.DriverSpy
   ##driver-class-name: com.mysql.jdbc.Driver
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 120.79.166.45:1111
 
 ## 扫描.xml文件
 mybatis-plus:
