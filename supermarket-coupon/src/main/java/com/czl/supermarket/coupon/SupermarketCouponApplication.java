@@ -6,8 +6,7 @@ import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 
 @SpringBootApplication
 @EnableDiscoveryClient
-public class SupermarketCouponApplication {
-
+public class  SupermarketCouponApplication {
     public static void main(String[] args) {
         SpringApplication.run(SupermarketCouponApplication.class, args);
     }

@@ -18,8 +18,8 @@
         <module>renren-fast</module>
         <module>renren-generator</module>
         <module>supermarket-common</module>
-        <module>math-test</module>
-        <module>elasticsearch-demo</module>
+        <module>supermarket-gateway</module>
+        <module>supermarket-search</module>
     </modules>
 
 

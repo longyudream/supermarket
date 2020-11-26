@@ -1,26 +1,26 @@
-## 服务端口
-server:
-  port: 10000
-## 配置数据源
+### 服务端口
+#server:
+#  port: 10002
+### 配置数据源
 spring:
-  #服务名
-  application:
-    name: coupon
-  datasource:
-    username: root
-    password: root
-    url: jdbc:log4jdbc:mysql://localhost:5820/supermarket_sms
-    ## 可以打印详细sql的驱动
-    driver-class-name: net.sf.log4jdbc.DriverSpy
-  ##driver-class-name: com.mysql.jdbc.Driver
+#  #服务名
+#  application:
+#    name: coupon
+#  datasource:
+#    username: root
+#    password: root
+#    url: jdbc:log4jdbc:mysql://localhost:5820/supermarket_sms
+#    ## 可以打印详细sql的驱动
+#    driver-class-name: net.sf.log4jdbc.DriverSpy
+#  ##driver-class-name: com.mysql.jdbc.Driver
   cloud:
     nacos:
       discovery:
-        server-addr: 120.79.166.45:1111
-
-## 扫描.xml文件
-mybatis-plus:
-  mapper-locations: classpath*:/mapper/**/*.xml
-  global-config:
-    db-config:
-      id-type: auto
+        server-addr: 127.0.0.1:8848
+#
+### 扫描.xml文件
+#mybatis-plus:
+#  mapper-locations: classpath*:/mapper/**/*.xml
+#  global-config:
+#    db-config:
+#      id-type: auto
