@@ -1,35 +1,25 @@
-### 服务端口
-server:
-  port: 88
-### 配置数据源
-spring:
-#  #服务名
-#  application:
-#    name: gateway
-##  datasource:
-##    username: root
-##    password: root
-##    url: jdbc:log4jdbc:mysql://localhost:5820/supermarket_sms
-#    ## 可以打印详细sql的驱动
-#    driver-class-name: net.sf.log4jdbc.DriverSpy
-#  ##driver-class-name: com.mysql.jdbc.Driver
-  cloud:
-    nacos:
-      discovery:
-        server-addr: 127.0.0.1:8848
+#### 服务端口
+#server:
+#  port: 88
+#### nacos配置
+#spring:
+#  cloud:
+#    nacos:
+#      discovery:
+#        server-addr: 127.0.0.1:8848
+#        namespace: bb7da6fa-7a11-4e64-b660-43d9b2eba7d1
 
 
 
+    ## 网关规则
 
-## 网关规则
-
-    gateway:
-      routes:
-        ## 唯一id
-        - id: test_gateway
-          ## 路由到的地址
-          uri: https://www.baidu.com
-          ## 断言规则
-          predicates:
-            - Query=url,baidu
+#    gateway:
+#      routes:
+#        ## 唯一id
+#        - id: test_gateway
+#          ## 路由到的地址
+#          uri: https://www.baidu.com
+#          ## 断言规则
+#          predicates:
+#            - Query=url,baidu
 

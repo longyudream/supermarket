@@ -20,6 +20,7 @@
         <module>supermarket-common</module>
         <module>supermarket-gateway</module>
         <module>supermarket-search</module>
+        <module>redis</module>
     </modules>
 
 
